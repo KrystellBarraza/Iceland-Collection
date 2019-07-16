@@ -184,7 +184,7 @@ nav.menu {
   z-index: -1;
 }
 
-.home-gallery, .about, .row, #gallery, .scrolling-wrapper {
+.home-gallery, .about, .row, #gallery, .scrolling-wrapper, .menu {
   -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
   -moz-animation: fadein 4s; /* Firefox < 16 */
   -ms-animation: fadein 4s; /* Internet Explorer */
@@ -366,7 +366,7 @@ input[type=submit]:hover {
   visibility: visible !important;
 }
 
-@-webkit-keyframes animat_show{
+@-webkit-keyframes animat_show {
   0%{opacity:0}
   100%{opacity:1}
 }
