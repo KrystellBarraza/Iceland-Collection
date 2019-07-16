@@ -5,8 +5,6 @@ A responsive website created to showcase a clothing collection inspired by Icela
 
 ## Screenshots
 ![Example screenshot 1](images/screenshot-home.jpg)
-![Example screenshot 2] (images/screenshot-gallery.jpg)
-
 
 ## Technologies
 * HTML5, CSS
