@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <title>Villt Fegurð - Samband</title>
+
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css" />
+        <link rel="icon" href="images.favicon.png" />
+    </head>
+
+    <body>
+        <div id="loader">
+            <img src="compass.gif" width="30%" />
+        </div>
+        <div class="blue-square-container">  
+            <div class="blue-square">
+                <div class="text-container">
+                    <nav class="menu">
+                        <p>Eftir Krystell Barraza</a></p>
+                        <p><a href="index.html">Heim</a></p>
+                        <p><a href="gallery.html">Gallerí</a></p>
+                        <p><a href="about.html">Um</a></p>
+                        <p><a href="contact.html">Samband</a></p>
+                    </nav>
+                    
+                    <div class="row">
+                        <div class="column">
+                            <p>Ná til mín með því að nota tengiliðasniðið, 
+                            eða þú getur sent tölvupóst til contact@krystellbarraza.com</p>
+                        </div>
+                        
+                        <div class="column">
+                            <form class=contact action="action_page.php" method="post">
+                                
+                                <input type="text" id="name" name="user_name" 
+                                placeholder="Nafn" required>
+                                
+                                <input type="email" id="email" name="user_email" 
+                                placeholder="Tölvupóstur" required>
+                                
+                                <input type="text" id="subject" name="user_subject" 
+                                placeholder="Efni" required>
+                            
+                                <textarea id="msg" name="user_message"
+                                placeholder="Sláðu inn skilaboðin þín hér..."></textarea>
+
+                                <div id="button">
+                                    <input type="submit" value="Senda Inn">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>  
+        <!-- Load the CDN first -->
+        <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+
+        <!-- IF CDN fails to load, serve up the local version -->
+        <script src="jquery-3.4.1.js"></script>
+        <script src="app.js"></script>
+    </body>
+</html>

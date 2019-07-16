@@ -1,0 +1,375 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
+  License: none (public domain)
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #000;
+  color: #C9DFEA;
+}
+
+#loader {
+  height: 1500px; 
+  width: 1500px;
+  background-color: #000;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 999;
+  transition: all .5s;
+}
+
+#loader img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+h1 {
+  font-size: 75px;
+}
+
+h2 {
+  font-size: 50px;    
+}
+
+h3 {
+  font-size: 30px;
+}
+
+p {
+  font-size: 21px;
+  font-variant: small-caps;
+  display: inline;
+  margin-right: 1em;
+}
+
+a {
+  color: #C9DFEA;
+  text-decoration: none;
+}
+
+a:hover   {
+  text-decoration: underline;
+  font-weight: bold;
+  color: #FFF;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+
+  } 
+
+.blue-square-container {
+  height: 100%;
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+}
+
+.blue-square {
+    position: relative;
+    width: 1300px; 
+    height: 680px; 
+    margin: 50px;
+  }
+
+.text-container {
+  padding: 25px;
+}
+
+.titles {
+  position: absolute;
+  bottom: 200px;
+}
+
+.credits {
+  position: absolute;
+  bottom: 20px;
+  font-variant: small-caps;
+}
+
+nav.menu {
+  display: flex;
+  justify-content: space-between; 
+  position: fixed;
+  z-index: 5; 
+}
+
+.about {
+  text-align: center;
+  left: 0;
+  margin: auto;
+  margin-top: -100px;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+}
+
+.img1 {
+  width: 300px;
+  height: 410px;
+  position: absolute;
+  left: 530px;
+  top: 250px;
+  z-index: -2;
+}
+
+.img3 {
+  width: 450px; 
+  height: 300px; 
+  position: absolute;
+  left: 675px;
+  top: 10px;
+  z-index: -3;
+}
+
+.img4 {
+  width: 300px; 
+  height: 410px; 
+  position: absolute;
+  left: 980px;
+  top: 160px;
+  z-index: -1;
+}
+
+.home-gallery, .about, .row, #gallery, .scrolling-wrapper {
+  -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 4s; /* Firefox < 16 */
+  -ms-animation: fadein 4s; /* Internet Explorer */
+  -o-animation: fadein 4s; /* Opera < 12.1 */
+  animation: fadein 4s;
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* contact.html Page */
+
+input {
+  height: 30px;
+  padding: 5px;
+  margin-bottom: 15px;
+}
+
+input, textarea {
+  font: 1em sans-serif;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #999;
+  resize: vertical;
+  background-color:rgba(0, 0, 0, 0)
+}
+
+input, select, textarea{
+  color: #C9DFEA;
+}
+
+textarea:focus, input:focus {
+  color: #C9DFEA;
+}
+
+textarea {
+  height: 7em;
+  padding: 5px; 
+}
+
+input[type=submit] {
+  background-color:rgba(255,255,255,0.14);
+  color: #C9DFEA;
+  border: 1px solid #999;
+  cursor: pointer;
+  transition: all 1s ease;
+  margin-top: 10px; 
+}
+
+input[type=submit]:hover {
+  background-color:rgba(255,255,255,0.4);
+  color: #C9DFEA;
+  border: 1px solid #999;
+  cursor: pointer;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 0; 
+  margin: auto;
+  margin-top: 120px;
+}
+
+@media only screen and (max-width: 600px) {
+  .column {
+    float: none;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  input[type=submit] {
+    width: calc(100% - 200px);
+    margin-top: 0;
+  }
+}
+
+/* gallery.html Page */
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin-top: 100px; 
+  z-index: -1; 
+}
+
+.flex-body {
+  flex: 1 1 0;
+}
+
+#gallery {
+  line-height: 0;
+  -webkit-column-count: 3;
+  -webkit-column-gap: 15px;
+  -moz-column-count: 3;
+  -moz-column-gap: 15px;
+  column-count: 3;
+  column-gap: 15px;  
+}
+
+#gallery img {
+  width: 100% !important;
+  height: auto !important;
+  padding-bottom: 15px; 
+}
+
+@media (max-width: 800px) {
+  #gallery {
+  -moz-column-count:    2;
+  -webkit-column-count: 2;
+  column-count:         2;
+ }
+}
+@media (max-width: 400px) {
+  #gallery {
+  -moz-column-count:    1;
+  -webkit-column-count: 1;
+  column-count:         1;
+ }
+}
+
+#shadow-top {
+  width: 100%;
+  height: 105px;
+  margin-top: 0;
+  top: 0;
+  display: flex;
+  position: fixed;
+  z-index: 4; 
+  background: #000;
+  left: 0; 
+  right: 0; 
+  transition: box-shadow 2s; 
+  -moz-transition:box-shadow 2s;
+  -webkit-transition:box-shadow 2s;
+  -ms-transition:box-shadow 2s;
+  -o-transition:box-shadow 2s;
+}
+
+#shadow-top.shadow {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 1);
+}
+
+.star {
+  visibility: hidden;
+}
+
+.fadeIn {
+  -webkit-animation: animat_show 0.6s;
+  animation: animat_show 0.6s;
+  visibility: visible !important;
+}
+
+@-webkit-keyframes animat_show{
+  0%{opacity:0}
+  100%{opacity:1}
+}
+
+
+
