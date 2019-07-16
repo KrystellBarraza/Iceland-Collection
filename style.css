@@ -184,7 +184,7 @@ nav.menu {
   z-index: -1;
 }
 
-.home-gallery, .about, .row, #gallery, .scrolling-wrapper, .menu {
+.home-gallery, .about, .row, #gallery, .scrolling-wrapper, .menu, .titles, .credits {
   -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
   -moz-animation: fadein 4s; /* Firefox < 16 */
   -ms-animation: fadein 4s; /* Internet Explorer */
