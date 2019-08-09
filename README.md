@@ -1,7 +1,7 @@
 # Iceland Collection Website & Gallery
 A responsive website created to showcase a clothing collection inspired by Iceland's south eastern corridor.  
 
-[Visit website here](https://krystellbarraza.github.io/Iceland_Travel/)
+[Visit website here](https://krystellbarraza.github.io/Iceland-Collection/)
 
 ## Screenshots
 ![Example screenshot 1](images/screenshot-home.jpg)
